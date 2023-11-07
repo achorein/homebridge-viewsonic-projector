@@ -1,0 +1,24 @@
+{
+  "bridge": {},
+  "platforms": [
+    {
+      "platform": "ViewSonic-Projector",
+      "devices": [
+        {
+          "name": "ViewSonic PX701HDP",
+          "model": "PX701HDP",
+          "adapter": "/dev/ttyUSB0",
+          "inputs": [
+            { "input": "hdmi", "label": "Apple TV" },
+            { "input": "RGB", "label": "Computer" },
+            { "input": "ypbr", "label": "Component" },
+            { "input": "hdmi2", "label": "Raspberry Pi" },
+            { "input": "vid", "label": "Composite" },
+            { "input": "svid", "label": "S-Video" }
+          ],
+          "baudrate": 9600
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "pluginAlias": "ViewSonic-Projector",
+  "pluginType": "platform",
+  "singular": false,
+  "headerDisplay": "Control a ViewSonic projector or other display via RS232 serial.",
+  "footerDisplay": "https://github.com/solowalker27/homebridge-viewsonic-projector",
+  "schema": {
+    "type": "object",
+    "required": ["devices"],
+    "properties": {
+      "devices": {
+        "type": "array",
+        "title": "ViewSonic devices",
+        "description": "List of devices that should be exposed to HomeKit. Each of them must be added manually to the Home app!",
+        "items": {
+          "type": "object",
+          "title": "Devices",
+          "description": "A device configuration represents one projector that will be exposed to HomeKit.",
+          "required": ["name", "adapter"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Device Name",
+              "default": "Projector",
+              "description": "Name of the projector as it will appear in HomeKit."
+            },
+            "model": {
+              "type": "string",
+              "title": "Device Model",
+              "default": "PX701HD",
+              "description": "Only displayed in accessory details in HomeKit."
+            },
+            "adapter": {
+              "type": "string",
+              "title": "Path to Serial Adapter",
+              "default": "/dev/ttyUSB0",
+              "description": "File system path to the RS232 serial adapter used to communicate with projector."
+            },
+            "baudrate": {
+              "type": "integer",
+              "title": "Baudrate of Serial Connection",
+              "description": "Baudrate required for successful serial connection to the projector.",
+              "default": 115200
+            },
+            "pollingInterval": {
+              "type": "integer",
+              "title": "Polling Interval",
+              "description": "Interval in milliseconds at which to poll for status of projector.",
+              "default": 6000
+            }
+          }
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+}

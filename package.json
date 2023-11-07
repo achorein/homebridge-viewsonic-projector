@@ -1,0 +1,43 @@
+{
+  "name": "homebridge-viewsonic-projector",
+  "version": "0.1.0",
+  "description": "Homebridge plugin for ViewSonic projectors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "patch-package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achorein/homebridge-viewsonic-projector.git"
+  },
+  "author": "achorein (https://github.com/achorein/homebridge-viewsonic-projector)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/achorein/homebridge-viewsonic-projector/issues"
+  },
+  "homepage": "https://github.com/achorein/homebridge-viewsonic-projector#readme",
+  "keywords": [
+    "viewsonic",
+    "projector",
+    "homebridge",
+    "homebridge-plugin",
+    "plugin",
+    "tv",
+    "px701hd",
+    "rs232",
+    "serial",
+    "serial-io",
+    "homekit"
+  ],
+  "engines": {
+    "node": ">=12.16.0",
+    "homebridge": ">=0.4.46"
+  },
+  "dependencies": {
+    "serial-io": "^1.2.0"
+  },
+  "devDependencies": {
+    "patch-package": "^8.0.0"
+  }
+}

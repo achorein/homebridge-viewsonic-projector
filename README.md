@@ -22,9 +22,8 @@ Hardware and OS :
 - Install [homebridge](https://github.com/nfarina/homebridge)
 - Connect to projector via RS232 _(make sure it appears in /dev/tty)_
 
-For now, this plugin can only be installed manually :
-
-- Install this plugin from terminal :
+- Auto Install: search for "homebridge-viewsonic-projector" in search bar
+- Or Manual Install using a terminal :
 
 ```sh
 sudo hb-shell
@@ -97,7 +96,7 @@ Special thanks to the [homebridge-benq-projector](https://github.com/solowalker2
 ## TODO
 
 - [x] Manager power on and power off (+ check status)
-- [ ] Plublish NPM package (for auto installation)
+- [x] Plublish NPM package (for auto installation)
 - [ ] Handle input management (check status, change to hdmi1/hdmi2/...)
 - [ ] Handle eco mode (check status, changetto Eco/Dynamic Eco/SuperÉco+,Normal)
 

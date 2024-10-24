@@ -107,6 +107,7 @@ After updating homebridge this error could happen :
 just rebuild serialport
 
 ```
+sudo hb-shell
 cd /var/lib/homebridge/node_modules/homebridge-viewsonic-projector
 npm rebuild
 ```

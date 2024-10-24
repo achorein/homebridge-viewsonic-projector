@@ -93,6 +93,24 @@ More info :
 
 Special thanks to the [homebridge-benq-projector](https://github.com/solowalker27/homebridge-benq-projector) plugin, on which this one is very inspired.
 
+## Troubleshooting
+
+After updating homebridge this error could happen :
+```
+[24/10/2024, 08:13:08] ERROR LOADING PLUGIN homebridge-viewsonic-projector:
+[24/10/2024, 08:13:08] Error: Could not locate the bindings file. Tried:
+ → /var/lib/homebridge/node_modules/homebridge-viewsonic-projector/node_modules/@serialport/bindings/build/bindings.node
+ → /var/lib/homebridge/node_modules/homebridge-viewsonic-projector/node_modules/@serialport/bindings/build/Debug/bindings.node
+ → /var/lib/homebridge/node_modules/homebridge-viewsonic-projector/node_modules/@serialport/bindings/build/Release/bindings.node
+```
+
+just rebuild serialport
+
+```
+cd /var/lib/homebridge/node_modules/homebridge-viewsonic-projector
+npm rebuild
+```
+
 ## TODO
 
 - [x] Manager power on and power off (+ check status)
